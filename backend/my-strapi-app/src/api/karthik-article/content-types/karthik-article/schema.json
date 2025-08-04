@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "karthik_articles",
+  "info": {
+    "singularName": "karthik-article",
+    "pluralName": "karthik-articles",
+    "displayName": "karthik-article"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "karthikResume": {
+      "type": "string"
+    },
+    "projects": {
+      "type": "string"
+    }
+  }
+}
