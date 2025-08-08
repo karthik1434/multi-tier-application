@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  strapi:
+    image: backend-image:latest
+    container_name: backend
+    ports:
+      - "1337:1337"
+    environment:
+      DATABASE_CLIENT: postgres
+      DATABASE_HOST: host.docker.internal
+      DATABASE_PORT: 5432
+      DATABASE_NAME: strapi
+      DATABASE_USERNAME: strapi
+      DATABASE_PASSWORD: strapi123
+    volumes:
+      - ./config:/app/config
+      - ./database:/app/database
+      - ./public:/app/public
+      - ./src:/app/src
+      - ./types:/app/types
