@@ -385,18 +385,31 @@ export interface ApiKarthikArticleKarthikArticle
     draftAndPublish: true;
   };
   attributes: {
+    about: Schema.Attribute.String;
+    City: Schema.Attribute.String;
+    Contry: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    karthikResume: Schema.Attribute.String;
+    DOB: Schema.Attribute.String;
+    Email: Schema.Attribute.String;
+    Gender: Schema.Attribute.String;
+    GitHub: Schema.Attribute.String;
+    LinkedIn: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::karthik-article.karthik-article'
     > &
       Schema.Attribute.Private;
+    Mobile: Schema.Attribute.String;
+    Pincode: Schema.Attribute.String;
     projects: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    Resume: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

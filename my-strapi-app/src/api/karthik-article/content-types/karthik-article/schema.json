@@ -11,10 +11,47 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "karthikResume": {
+    "projects": {
       "type": "string"
     },
-    "projects": {
+    "Mobile": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "string"
+    },
+    "City": {
+      "type": "string"
+    },
+    "LinkedIn": {
+      "type": "string"
+    },
+    "GitHub": {
+      "type": "string"
+    },
+    "DOB": {
+      "type": "string"
+    },
+    "Gender": {
+      "type": "string"
+    },
+    "Contry": {
+      "type": "string"
+    },
+    "Pincode": {
+      "type": "string"
+    },
+    "Resume": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "about": {
       "type": "string"
     }
   }
