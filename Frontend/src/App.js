@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { fetchArticles } from "./services/api";
 import Header from "./components/Header";
 import ProfileSection from "./components/ProfileSection";
-import ArticlesList from "./components/ArticlesList";
+import Aboutsection from "./components/about";
 import "./App.css";
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
     <div className="App">
       <Header />
       <ProfileSection />
-      <ArticlesList articles={articles} />
+      <Aboutsection articles={articles} />
     </div>
   );
 }

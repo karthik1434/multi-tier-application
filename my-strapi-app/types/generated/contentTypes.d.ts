@@ -373,6 +373,35 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiDemoContentDemoContent extends Struct.CollectionTypeSchema {
+  collectionName: 'demo_contents';
+  info: {
+    displayName: 'demo content';
+    pluralName: 'demo-contents';
+    singularName: 'demo-content';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    date: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::demo-content.demo-content'
+    > &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiKarthikArticleKarthikArticle
   extends Struct.CollectionTypeSchema {
   collectionName: 'karthik_articles';
@@ -385,7 +414,7 @@ export interface ApiKarthikArticleKarthikArticle
     draftAndPublish: true;
   };
   attributes: {
-    about: Schema.Attribute.String;
+    about: Schema.Attribute.Text;
     City: Schema.Attribute.String;
     Contry: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
@@ -925,6 +954,7 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::demo-content.demo-content': ApiDemoContentDemoContent;
       'api::karthik-article.karthik-article': ApiKarthikArticleKarthikArticle;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;

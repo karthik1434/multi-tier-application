@@ -52,7 +52,7 @@
       ]
     },
     "about": {
-      "type": "string"
+      "type": "text"
     }
   }
 }
