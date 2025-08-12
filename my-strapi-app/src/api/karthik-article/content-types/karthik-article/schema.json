@@ -53,6 +53,21 @@
     },
     "about": {
       "type": "text"
+    },
+    "SKILLS": {
+      "type": "text"
+    },
+    "EXPERIENCE": {
+      "type": "text"
+    },
+    "EDUCATION": {
+      "type": "text"
+    },
+    "HOBBIES": {
+      "type": "text"
+    },
+    "job": {
+      "type": "blocks"
     }
   }
 }

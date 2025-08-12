@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mytools",
+  "info": {
+    "singularName": "mytool",
+    "pluralName": "mytools",
+    "displayName": "MYTOOL"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "DevOps": {
+      "type": "text"
+    },
+    "OperatingSystems": {
+      "type": "text"
+    },
+    "ScriptingLanguages": {
+      "type": "text"
+    },
+    "Monitoring": {
+      "type": "text"
+    },
+    "VersionControl": {
+      "type": "string"
+    }
+  }
+}

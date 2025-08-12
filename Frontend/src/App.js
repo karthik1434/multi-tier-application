@@ -1,17 +1,24 @@
 import React, { useEffect, useState } from "react";
-import { fetchArticles } from "./services/api";
+import { fetchArticles, mytools } from "./services/api";
 import Header from "./components/Header";
 import ProfileSection from "./components/ProfileSection";
 import Aboutsection from "./components/about";
+import SKILS from "./components/skils";
+import EXPERIENCE from "./components/experince";
 import "./App.css";
 
 function App() {
   const [articles, setArticles] = useState([]);
+  const [tools, setTools] = useState([]);
 
   useEffect(() => {
     fetchArticles()
       .then((res) => setArticles(res.data.data || []))
-      .catch((err) => console.error(err));
+      .catch((err) => console.error("Articles fetch error:", err));
+
+    mytools()
+      .then((res) => setTools(res.data.data || []))
+      .catch((err) => console.error("Tools fetch error:", err));
   }, []);
 
   return (
@@ -19,6 +26,8 @@ function App() {
       <Header />
       <ProfileSection />
       <Aboutsection articles={articles} />
+      <SKILS tools={tools} />
+      <EXPERIENCE articles={articles} />
     </div>
   );
 }

@@ -51,7 +51,7 @@ function Aboutsection({ articles }) {
                 fontSize: "3rem",
                 color: "brown",
                 position: "absolute",
-                bottom: "100", // moved up closer to text
+                bottom: "0", // moved up closer to text
                 right: "0",
                 transform: "translateY(60%)", // fine tune vertical position
               }}
@@ -67,5 +67,3 @@ function Aboutsection({ articles }) {
 
 export default Aboutsection;
 
-// Castellar
-// Centaur

@@ -16,9 +16,9 @@ function ProfileSection() {
         padding: "1vw",
         justifyContent: "center",
 
-        width: "fit-content",   // ✅ Border wraps content only
-        maxWidth: "100%",       // ✅ Prevent overflow
-        margin: "0 auto",       // ✅ Center the whole thing
+        width: "fit-content",  
+        maxWidth: "100%",     
+        margin: "0 auto",   
       }}
     >
       <div style={{ flexShrink: 0 }}>

@@ -421,9 +421,13 @@ export interface ApiKarthikArticleKarthikArticle
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     DOB: Schema.Attribute.String;
+    EDUCATION: Schema.Attribute.Text;
     Email: Schema.Attribute.String;
+    EXPERIENCE: Schema.Attribute.Text;
     Gender: Schema.Attribute.String;
     GitHub: Schema.Attribute.String;
+    HOBBIES: Schema.Attribute.Text;
+    job: Schema.Attribute.Blocks;
     LinkedIn: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -439,9 +443,42 @@ export interface ApiKarthikArticleKarthikArticle
       'images' | 'files' | 'videos' | 'audios',
       true
     >;
+    SKILLS: Schema.Attribute.Text;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+  };
+}
+
+export interface ApiMytoolMytool extends Struct.CollectionTypeSchema {
+  collectionName: 'mytools';
+  info: {
+    displayName: 'MYTOOL';
+    pluralName: 'mytools';
+    singularName: 'mytool';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    DevOps: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::mytool.mytool'
+    > &
+      Schema.Attribute.Private;
+    Monitoring: Schema.Attribute.Text;
+    OperatingSystems: Schema.Attribute.Text;
+    publishedAt: Schema.Attribute.DateTime;
+    ScriptingLanguages: Schema.Attribute.Text;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    VersionControl: Schema.Attribute.String;
   };
 }
 
@@ -956,6 +993,7 @@ declare module '@strapi/strapi' {
       'admin::user': AdminUser;
       'api::demo-content.demo-content': ApiDemoContentDemoContent;
       'api::karthik-article.karthik-article': ApiKarthikArticleKarthikArticle;
+      'api::mytool.mytool': ApiMytoolMytool;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;
