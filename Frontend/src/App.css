@@ -60,3 +60,48 @@ body {
   }
 }
 
+
+
+
+
+/* Skills and Experience Section Styles */
+
+
+.skills-container {
+  margin: 0 auto;
+}
+
+.skills-section {
+  margin-bottom: 20px;
+}
+
+.skills-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: auto auto; /* shrink columns to fit content */
+  column-gap: 10px; /* space between label and value */
+  row-gap: 12px;
+}
+
+
+.skills-label {
+  font-weight: bold;
+  text-align: left;
+}
+
+.skills-value {
+  text-align: left;
+}
+
+.interests-text {
+  font-size: 1rem;
+  text-align: left;
+  margin-top: 20px;
+}
+
+

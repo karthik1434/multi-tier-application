@@ -3,8 +3,7 @@ import { fetchArticles, mytools } from "./services/api";
 import Header from "./components/Header";
 import ProfileSection from "./components/ProfileSection";
 import Aboutsection from "./components/about";
-import SKILS from "./components/skils";
-import EXPERIENCE from "./components/experince";
+import SkillsAndExperience from "./components/SkillsAndExperience";
 import "./App.css";
 
 function App() {
@@ -26,8 +25,7 @@ function App() {
       <Header />
       <ProfileSection />
       <Aboutsection articles={articles} />
-      <SKILS tools={tools} />
-      <EXPERIENCE articles={articles} />
+      <SkillsAndExperience tools={tools} articles={articles} />
     </div>
   );
 }
