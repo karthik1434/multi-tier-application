@@ -105,3 +105,37 @@ body {
 }
 
 
+/* buttons.js */
+
+.resume-download-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.resume-download-link {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #4b69a8;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover / Active effects */
+.resume-download-link:hover {
+  background-color: #35508b;
+  transform: translateY(-2px);
+}
+
+.resume-download-link:active {
+  background-color: #2e9054;
+  transform: translateY(0);
+}
+
+
+

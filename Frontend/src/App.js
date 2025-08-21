@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import ProfileSection from "./components/ProfileSection";
 import Aboutsection from "./components/about";
 import SkillsAndExperience from "./components/SkillsAndExperience";
+import { ResumeDownload, ProjectSourceCode } from "./components/buttens";
 import "./App.css";
 
 function App() {
@@ -26,6 +27,8 @@ function App() {
       <ProfileSection />
       <Aboutsection articles={articles} />
       <SkillsAndExperience tools={tools} articles={articles} />
+      <ResumeDownload />
+      <ProjectSourceCode />
     </div>
   );
 }

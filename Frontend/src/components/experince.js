@@ -5,7 +5,10 @@ function EXPERIENCE({ articles }) {
   if (!articles?.length) return <p>Loading content...</p>;
 
   return (
-    <div style={{ textAlign: "center" }}>
+    <div style={{ 
+      textAlign: "center" 
+      
+      }}>
       {articles.map((item) => {
         const attributes = item || {};
         const job = attributes.job;
