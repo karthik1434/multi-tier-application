@@ -35,7 +35,7 @@ a {
   align-items: center;
   justify-content: center;
   font-size: 70px;
-  color: #fff;
+  color: #f9f8f8;
   border-radius: 8px;
 }
 
@@ -109,7 +109,9 @@ body {
 
 .resume-download-container {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  gap: 100px;
 }
 
 .resume-download-link {
@@ -124,6 +126,8 @@ body {
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: background 0.3s ease, transform 0.2s ease;
+   margin-right: 20px;
+
 }
 
 /* Hover / Active effects */

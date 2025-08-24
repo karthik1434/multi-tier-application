@@ -27,8 +27,8 @@ function App() {
       <ProfileSection />
       <Aboutsection articles={articles} />
       <SkillsAndExperience tools={tools} articles={articles} />
-      <ResumeDownload />
       <ProjectSourceCode />
+      <ResumeDownload />
     </div>
   );
 }
