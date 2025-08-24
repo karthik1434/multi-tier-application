@@ -26,6 +26,6 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: ./my-strapi-app
-          file: ./my-strapi-app/Dockerfile
+          file: ./my-strapi-app/dockerfilepro
           push: true
           tags: duggana1994/strapi-backend:latest
