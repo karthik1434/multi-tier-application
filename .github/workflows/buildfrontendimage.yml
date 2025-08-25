@@ -25,7 +25,7 @@ jobs:
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v5
         with:
-          context: ./frontend
+          context: ./Frontend
           file: ./my-strapi-app/dockerfile
           push: true
           tags: duggana1994/react-frontend:latest
