@@ -26,7 +26,7 @@ a {
 .App-header {
   background-color: #396076;
   min-height: 150px;
-  width: 900px; /* fixed width */
+  width: 850px; /* fixed width */
   max-width: 100%; /* allow shrink on small screens */
   margin-left: auto; /* center horizontally */
   margin-right: auto; /* center horizontally */
@@ -139,6 +139,47 @@ body {
 .resume-download-link:active {
   background-color: #2e9054;
   transform: translateY(0);
+}
+
+
+/* about section  */
+
+.about-container {
+  text-align: center;
+}
+
+.about-wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 850px;
+  font-family: Centaur, Centaur, serif;
+  position: relative;
+}
+
+.about-quote-top {
+  font-size: 5rem;
+  color: brown;
+  position: absolute;
+  top: -50px;
+  left: 0;
+}
+
+.about-text {
+  margin: 40px auto 10px auto;
+  max-width: 850px;
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-top: 50px;
+}
+
+.about-quote-bottom {
+  font-size: 5rem;
+  color: brown;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(60%);
 }
 
 
